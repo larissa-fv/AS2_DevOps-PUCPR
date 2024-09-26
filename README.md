@@ -2,6 +2,8 @@
 
 # Projeto de DevOps Pucpr2024 com base na AS1.
 
+Como referência, utilizei o projeto desenvolvido na AS1, disponível em: https://github.com/larissa-fv/Meu-Projeto-.git
+
 ### Resumo da Atividade Somativa 2 (AS2) - DevOps
 
 **Objetivo**: Completar o projeto em desenvolvimento no GitHub Actions, focando na implementação de testes unitários e integração contínua.
