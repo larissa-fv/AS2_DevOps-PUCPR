@@ -54,5 +54,5 @@ Estrutura de layout melhorada com uso de flexbox e elementos semânticos.
 
 Site: https://larissa-fv.github.io/AS2_DevOps-PUCPR/
 
-![image](https://github.com/user-attachments/assets/9d6e5488-90f0-4e07-b19e-4b0bf2b98172)
+![image](https://github.com/user-attachments/assets/f4899542-cf18-4d78-806a-4b1aefb9ea6c)
 
