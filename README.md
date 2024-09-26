@@ -1,4 +1,4 @@
-# AS2_DevOps PUCPRPR
+# AS2_DevOps PUCPR
 
 # Projeto de DevOps Pucpr2024 com base na AS1.
 
