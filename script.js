@@ -23,6 +23,7 @@ const devocionais = [
         versiculo: "E nós conhecemos e cremos no amor que Deus tem por nós.",
         referencia: "1 João 4:16",
         reflexao: "Este versículo nos encoraja a confiar no amor incondicional de Deus, que entregou Seu Filho para morrer em nosso lugar. Nossa dívida foi paga; não temos mais o que temer. Isso, porém, não nos dá o direito de viver de qualquer maneira, mas de viver uma vida que glorifique a Deus. Não seremos salvos ou reconhecidos por nossas boas obras, pois é apenas o Sangue de Cristo que nos purifica de todos os pecados."
+    
     },
     {
         versiculo: "Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus; eu te fortaleço, e te ajudo, e te sustento com a minha destra fiel.",
@@ -56,12 +57,28 @@ const devocionais = [
     }
 ];
 
+
+// Lista de imagens
+const imagens = [
+    "images/images_1.png",
+    "images/images_2.png",
+    "images/images_3.png",
+    
+];
+
 function novoVersiculo() {
     const randomIndex = Math.floor(Math.random() * devocionais.length);
     const versiculoDoDia = devocionais[randomIndex];
 
     document.getElementById("texto-versiculo").innerText = `"${versiculoDoDia.versiculo}" - ${versiculoDoDia.referencia}`;
     document.getElementById("reflexao").innerText = versiculoDoDia.reflexao;
+
+    const imagem = document.getElementById("imagem-devocional");
+    const randomImageIndex = Math.floor(Math.random() * imagens.length);
+    imagem.src = imagens[randomImageIndex]; // Seleciona uma imagem aleatória
+    imagem.classList.remove("animar"); // Remove a classe se já existir
+    void imagem.offsetWidth; // Força a reflow para reiniciar a animação
+    imagem.classList.add("animar"); // Adiciona a classe para animar
 }
 
 // Carrega um versículo aleatório ao abrir a página

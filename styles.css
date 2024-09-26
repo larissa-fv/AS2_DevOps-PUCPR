@@ -15,6 +15,7 @@ header {
     padding: 20px;
     width: 100%;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -24,7 +25,7 @@ main {
 #versiculo {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
     max-width: 500px;
@@ -40,7 +41,7 @@ main {
     max-width: 400px;
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in-out;
 }
 
 #imagem-devocional.animar {
@@ -58,11 +59,12 @@ main {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .botao:hover {
     background-color: #45a049; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Animação de escala ao passar o mouse */
 }
 
 footer {
